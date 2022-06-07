@@ -9,7 +9,7 @@ import ru.netology.sqr.SQRService;
 
 public class SQRServiceTest {
     @ParameterizedTest
-    @CsvFileSource(files="src/test/resources/data.csv")
+    @CsvFileSource(files = "src/test/resources/data.csv")
     public void testWithDataFromFile(int expected, int down, int up) {
         SQRService number = new SQRService();
         int actual = number.counter(down, up);
